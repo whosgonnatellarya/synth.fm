@@ -1,0 +1,17 @@
+# Python virtual environment
+.venv/
+code/backend/.venv/
+
+# Environment files
+.env
+.env.*
+code/backend/.env
+code/backend/.env.*
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Node modules and build outputs
+code/frontend/synthfm/node_modules/
+code/frontend/synthfm/build/
