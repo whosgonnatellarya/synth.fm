@@ -1,0 +1,210 @@
+:root {
+  --platform-bg-1: #08141f;
+  --platform-bg-2: #102633;
+  --platform-bg-3: #193647;
+  --platform-card: rgba(13, 25, 38, 0.74);
+  --platform-line: rgba(132, 196, 255, 0.28);
+  --platform-glow: rgba(80, 188, 255, 0.22);
+  --platform-text: #ebf8ff;
+  --platform-muted: #b2cad7;
+  --platform-accent: #7ef0d2;
+  --platform-secondary: #8fc2ff;
+  --platform-warn: #ffc97d;
+}
+
+.platform-shell {
+  min-height: 100vh;
+  width: 100%;
+  color: var(--platform-text);
+  background:
+    radial-gradient(1200px 500px at 10% -5%, rgba(77, 190, 255, 0.18), transparent 65%),
+    radial-gradient(900px 500px at 95% 0%, rgba(126, 240, 210, 0.16), transparent 65%),
+    linear-gradient(165deg, var(--platform-bg-1) 0%, var(--platform-bg-2) 58%, var(--platform-bg-3) 100%);
+  padding: 32px 20px 48px;
+  box-sizing: border-box;
+}
+
+.platform-container {
+  max-width: 1120px;
+  margin: 0 auto;
+}
+
+.platform-topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 28px;
+  flex-wrap: wrap;
+}
+
+.platform-pill {
+  color: #e8fcff;
+  border: 1px solid var(--platform-line);
+  background: rgba(10, 20, 30, 0.55);
+  border-radius: 999px;
+  padding: 8px 14px;
+  text-decoration: none;
+  font-size: 0.95rem;
+  letter-spacing: 0.03em;
+}
+
+.platform-hero {
+  border: 1px solid var(--platform-line);
+  background: linear-gradient(130deg, rgba(12, 30, 41, 0.85), rgba(12, 27, 42, 0.56));
+  border-radius: 20px;
+  padding: 28px;
+  box-shadow: 0 24px 40px rgba(0, 0, 0, 0.28), inset 0 0 40px var(--platform-glow);
+  margin-bottom: 22px;
+}
+
+.platform-kicker {
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  color: var(--platform-accent);
+  font-size: 0.82rem;
+  margin-bottom: 10px;
+}
+
+.platform-hero h1 {
+  margin: 0;
+  font-size: clamp(2rem, 3.8vw, 3.4rem);
+  font-weight: 400;
+  line-height: 1.08;
+}
+
+.platform-hero p {
+  color: var(--platform-muted);
+  font-size: clamp(1rem, 1.8vw, 1.25rem);
+  line-height: 1.55;
+  margin: 14px 0 0;
+}
+
+.platform-grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 16px;
+}
+
+.platform-card {
+  border: 1px solid var(--platform-line);
+  background: var(--platform-card);
+  border-radius: 16px;
+  padding: 18px;
+  box-shadow: inset 0 0 28px rgba(86, 189, 255, 0.08);
+}
+
+.platform-card h3 {
+  margin: 0 0 10px;
+  font-weight: 400;
+  font-size: 1.35rem;
+}
+
+.platform-span-6 {
+  grid-column: span 6;
+}
+
+.platform-span-5 {
+  grid-column: span 5;
+}
+
+.platform-span-4 {
+  grid-column: span 4;
+}
+
+.platform-span-7 {
+  grid-column: span 7;
+}
+
+.platform-span-8 {
+  grid-column: span 8;
+}
+
+.platform-span-12 {
+  grid-column: span 12;
+}
+
+.platform-metric {
+  font-size: clamp(1.8rem, 3vw, 2.6rem);
+  color: var(--platform-secondary);
+  margin: 2px 0;
+}
+
+.platform-caption {
+  margin: 0;
+  color: var(--platform-muted);
+  font-size: 0.95rem;
+}
+
+.platform-code {
+  background: rgba(8, 16, 24, 0.9);
+  border: 1px solid rgba(125, 201, 255, 0.32);
+  border-radius: 12px;
+  padding: 14px;
+  overflow-x: auto;
+  color: #d9f5ff;
+  font-size: 0.9rem;
+  line-height: 1.55;
+}
+
+.platform-link-row {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-top: 16px;
+}
+
+.platform-cta {
+  border: 1px solid rgba(126, 240, 210, 0.45);
+  color: #e8fff8;
+  background: rgba(50, 111, 100, 0.34);
+  text-decoration: none;
+  border-radius: 12px;
+  padding: 10px 14px;
+  font-size: 0.95rem;
+}
+
+.platform-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 10px;
+}
+
+.platform-list li {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px dashed rgba(129, 170, 197, 0.3);
+  padding-bottom: 8px;
+  gap: 8px;
+  color: #d8edf8;
+}
+
+.platform-chip {
+  border-radius: 8px;
+  padding: 2px 8px;
+  font-size: 0.82rem;
+  color: #02231c;
+  background: var(--platform-accent);
+}
+
+.platform-note {
+  margin-top: 14px;
+  color: #f7d8ac;
+  font-size: 0.95rem;
+}
+
+@media (max-width: 980px) {
+  .platform-span-8,
+  .platform-span-7,
+  .platform-span-6,
+  .platform-span-5,
+  .platform-span-4 {
+    grid-column: span 12;
+  }
+
+  .platform-hero {
+    padding: 22px;
+  }
+}

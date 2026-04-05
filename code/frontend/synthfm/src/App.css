@@ -1,0 +1,8 @@
+@import url('https://fonts.googleapis.com/css?family=Oranienbaum:400&display=swap');
+
+body {
+  margin: 0;
+  font-family: 'Oranienbaum', serif;
+  background: linear-gradient(180deg, #11121A 0%, #151C3B 100%);
+  color: #D7DBE1;
+}

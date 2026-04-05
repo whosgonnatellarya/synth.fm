@@ -1,0 +1,14 @@
+/* src/components/LoadingScreen.css */
+.loading-screen {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  width: 100vw;
+  background: linear-gradient(180deg, #070911 0%, #0B1230 52%, #101B3D 100%);
+  color: #fff;
+  font-family: inherit;
+  overflow: hidden;
+}
